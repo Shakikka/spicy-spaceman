@@ -7,3 +7,8 @@ const checkForError = (response) => {
         return response.json()
     }
 }
+
+export const getTodaysImageDetails = () => {
+    return fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
+            .then(checkForError)
+}
