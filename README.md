@@ -2,7 +2,7 @@
 
 Created by: [Joel Thomas](https://github.com/Shakikka)
 
-### Deployed App: [The Spicy Spaceman](https://the-nomadic-nibbler.herokuapp.com/)
+### Deployed App: [The Spicy Spaceman](https://the-spicy-spaceman.herokuapp.com/)
 
 
 ## Outline
@@ -24,6 +24,7 @@ The Spicy Spaceman is a web app that consumes the __ NASA API
 - HTML5
 - CSS3
   - SASS / SCSS
+- TravisCI
 
 ### Testing:
 - Cypress
@@ -31,7 +32,7 @@ The Spicy Spaceman is a web app that consumes the __ NASA API
   - Chai
 
 ## Instructions for Installation
-   - Can visit the deployed app [here](https://the-nomadic-nibbler.herokuapp.com/)
+   - Can visit the deployed app [here](https://the-spicy-spaceman.herokuapp.com/)
    
  OR
  
