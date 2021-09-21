@@ -1,7 +1,8 @@
-import './App.css';
 import { useEffect, useState } from 'react';
-import arth  from '../../assets/Arth.gif';
+import { Switch, Route } from 'react-router-dom';
+import Header from '../Header/Header';
 import { getTodaysImageDetails } from '../../apiCalls';
+import './App.css';
 
 const App = () => {
 
@@ -16,7 +17,13 @@ const App = () => {
   }, [])
 
   return (
-    <img src={arth} alt=''/>
+    <Switch>
+      <Route exact path='/' render={() => {
+        return (
+          <Header />
+        )}}
+      />
+    </Switch>
   );
 }
 
