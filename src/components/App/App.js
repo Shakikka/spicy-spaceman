@@ -20,7 +20,9 @@ const App = () => {
     <Switch>
       <Route exact path='/' render={() => {
         return (
-          <Header />
+          <section className='main-container'>
+            <Header />
+          </section>
         )}}
       />
     </Switch>
