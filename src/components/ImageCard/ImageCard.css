@@ -44,6 +44,15 @@ button:hover {
     cursor: pointer;
 }
 
+.like-container {
+    margin: 10px;
+    display: flex;
+    height: 70px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .unliked {
     height: 30px;
     width: 30px;
