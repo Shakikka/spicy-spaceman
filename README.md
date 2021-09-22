@@ -14,7 +14,7 @@ Created by: [Joel Thomas](https://github.com/Shakikka)
 
 ## App Overview
 
-The Spicy Spaceman is a web app that consumes the __ NASA API
+The Spicy Spaceman is a web app that consumes the NASA APOD API. It allows a user to see Images with information about that imagefrom September 15th, 2021 to present day. Users can also like and dislike images.
  
 ## Tech Stack
 
@@ -36,11 +36,11 @@ The Spicy Spaceman is a web app that consumes the __ NASA API
  OR
  
   - To run this application on your local machine, clone down the 
-         - [frontend repo](https://github.com/NomadicNibbler/foodtruck-fe) 
+         - [repo](https://github.com/Shakikka/spicy-spaceman) 
    
   - change into the root directory from the command line, and run `npm install`. 
     
-  - Then run `npm   start` to open the application locally. If you aren't taken there, visit `http://localhost:3000/`
+  - Then run `npm start` to open the application locally. If you aren't taken there, visit `http://localhost:3000/`
     
   - To run the test suite locally, you will also need to run the command `npm i -D cypress` from the command line.
     
@@ -49,3 +49,9 @@ The Spicy Spaceman is a web app that consumes the __ NASA API
   - Note: you will need to run the application locally (start the server with `npm start` from the root directory on the command line) in order to run the automated tests.
 
 ## Future Iterations
+- Media queries
+- Local Storage
+- Favorite's page
+- E2E and unit testing
+- Random images
+- Images by date range
