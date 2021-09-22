@@ -7,6 +7,7 @@ const ImageCard = ({ todaysDetails }) => {
     return (
         <section className='image-card-box'>
             <img className='todays-image' src={url} alt=''/>
+            <h3>{title}</h3>
         </section>
     )
 }

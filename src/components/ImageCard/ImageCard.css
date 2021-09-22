@@ -1,14 +1,20 @@
 .image-card-box {
+    margin-top: 15px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-self: center;
     justify-content: center;
+    align-content: center;
     flex-direction: row;
     background: rgba(220, 237, 247, .75);
     width: 50%;
     border-radius: 7px;
+    font-family: 'Space Mono', monospace;
 }
 
 .todays-image {
+    margin-top: 10px;
     border-radius: 7px;
     width: 750px;
     height: 500px;
