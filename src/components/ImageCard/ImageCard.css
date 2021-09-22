@@ -40,5 +40,11 @@ button {
 button:hover {
     border: solid #87B454;
     background: #019FAE;
-    color: rgb(220, 237, 247)
+    color: rgb(220, 237, 247);
+    cursor: pointer;
+}
+
+.unliked {
+    height: 30px;
+    width: 30px;
 }

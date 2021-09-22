@@ -1,3 +1,4 @@
+import unliked from '../../assets/saturn-unlike.png';
 import './ImageCard.css';
 
 const ImageCard = ({ todaysDetails }) => {
@@ -13,7 +14,10 @@ const ImageCard = ({ todaysDetails }) => {
             </div>
             <h3>{title}</h3>
             <h6>{explanation}</h6>
-            <button>Like?</button>
+            <div className='like-container'>
+                <button>Like?</button>
+                <img className='unliked' src={unliked} alt='unliked' />
+            </div>
         </section>
     )
 }

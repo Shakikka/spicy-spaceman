@@ -23,13 +23,12 @@ The Spicy Spaceman is a web app that consumes the __ NASA API
   - React Router
 - HTML5
 - CSS3
-  - SASS / SCSS
 - TravisCI
 
-### Testing:
+<!-- ### Testing:
 - Cypress
   - Mocha
-  - Chai
+  - Chai -->
 
 ## Instructions for Installation
    - Can visit the deployed app [here](https://the-spicy-spaceman.herokuapp.com/)
