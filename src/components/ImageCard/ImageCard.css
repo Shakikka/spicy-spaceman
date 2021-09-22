@@ -16,15 +16,29 @@
 }
 
 .todays-image {
-    /* margin-top: 10px; */
     border-radius: 7px;
     width: 750px;
     height: 500px;
 }
 
-.img-deets {
+.image-details {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 150px;
+}
+
+button {
+    font-family: inherit;
+    font-style: italic;
+    border-radius: 7px;
+    outline: none;
+    border: solid #019FAE;
+    background: #87B454;
+}
+
+button:hover {
+    border: solid #87B454;
+    background: #019FAE;
+    color: rgb(220, 237, 247)
 }
