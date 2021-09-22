@@ -49,3 +49,7 @@ button:hover {
     height: 30px;
     width: 30px;
 }
+
+iframe {
+    border-radius: 7px;
+}
