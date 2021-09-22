@@ -1,8 +1,15 @@
 .image-card-box {
     display: flex;
     align-self: center;
+    justify-content: center;
     flex-direction: row;
     background: rgba(220, 237, 247, .75);
     width: 50%;
     border-radius: 7px;
+}
+
+.todays-image {
+    border-radius: 7px;
+    width: 750px;
+    height: 500px;
 }
