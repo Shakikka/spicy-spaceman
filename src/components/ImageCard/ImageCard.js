@@ -1,23 +1,9 @@
-import { useState } from 'react';
 import unliked from '../../assets/saturn-unlike.png';
 import liked from '../../assets/saturn-like.png';
 import './ImageCard.css';
 
-const ImageCard = ({ imageDetails, favoriteImage }) => {
+const ImageCard = ({ imageDetails, favoriteImage, icons }) => {
 
-    const [icons, setIcons] = useState([])
-    
-    const changeIcon = e => {
-        favoriteImage(e)
-        const targetId = e.target.id
-        if (!icons.includes(targetId)) {
-            setIcons([...icons, targetId])
-        } else {
-            const filteredIcons = icons.filter(icon => icon !== targetId)
-            setIcons([...filteredIcons])
-        } 
-    }
-    
     return (
         imageDetails.map(({ media_type, date, explanation, title, url }) => {
             return (
@@ -34,7 +20,7 @@ const ImageCard = ({ imageDetails, favoriteImage }) => {
                     <h3>{title}</h3>
                     <h6>{explanation}</h6>
                     <div className='like-container'>
-                        <button id={date} onClick={changeIcon}>{icons.includes(date) ? 'unlike' : 'like'}</button>
+                        <button id={date} onClick={favoriteImage}>{icons.includes(date) ? 'unlike' : 'like'}</button>
                         <img className='unliked' src={icons.includes(date) ? liked: unliked} alt='liked' />
                     </div>
                 </section>

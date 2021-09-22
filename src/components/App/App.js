@@ -9,6 +9,7 @@ const App = () => {
 
   const [imageDetails, setImageDetails] = useState([])
   const [favorites, setFavorites] = useState([])
+  const [icons, setIcons] = useState([])
 
   useEffect(() => {
     getImageDetails()
@@ -23,9 +24,12 @@ const App = () => {
     if (searchFavorites === -1) {
       const foundImage = imageDetails.find(image => targetId === image.date)
       setFavorites([...favorites, foundImage])
+      setIcons([...icons, targetId])
     } else {
       const filteredFavs = favorites.filter(favorite => favorite.date !== targetId)
+      const filteredIcons = icons.filter(icon => icon !== targetId)
       setFavorites([...filteredFavs])
+      setIcons([...filteredIcons])
     }
   }
 
@@ -35,7 +39,7 @@ const App = () => {
         return (
           <section className='main-container'>
             <Header />
-            <ImageCard imageDetails={imageDetails} favoriteImage={favoriteImage}/>
+            <ImageCard imageDetails={imageDetails} favoriteImage={favoriteImage} icons={icons}/>
           </section>
         )}}
       />
