@@ -10,11 +10,13 @@ const App = () => {
   const [imageDetails, setImageDetails] = useState([])
   const [favorites, setFavorites] = useState([])
   const [icons, setIcons] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     getImageDetails()
     .then(details => {
       setImageDetails(details.reverse())
+      setLoading(false)
     })
   }, [])
 
@@ -40,6 +42,7 @@ const App = () => {
           <section className='main-container'>
             <Header />
             <ImageCard imageDetails={imageDetails} favoriteImage={favoriteImage} icons={icons}/>
+            {loading && <h2>Loading...</h2>}
           </section>
         )}}
       />
