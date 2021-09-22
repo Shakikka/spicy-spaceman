@@ -1,25 +1,25 @@
 import { useEffect, useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { getTodaysImageDetails } from '../../apiCalls';
+import { getImageDetails } from '../../apiCalls';
 import Header from '../Header/Header';
 import ImageCard from '../ImageCard/ImageCard';
 import './App.css';
 
 const App = () => {
 
-  const [todaysDetails, setTodaysDetails] = useState({})
-  const [favorites, setFavorites] = useState([])
+  const [imageDetails, setImageDetails] = useState([])
+  // const [favorites, setFavorites] = useState([])
 
   useEffect(() => {
-    getTodaysImageDetails()
+    getImageDetails()
     .then(details => {
-      setTodaysDetails(details)
+      setImageDetails(details.reverse())
       console.log(details)
     })
   }, [])
 
   const favorite = () => {
-    
+
   }
 
   return (
@@ -28,7 +28,7 @@ const App = () => {
         return (
           <section className='main-container'>
             <Header />
-            <ImageCard todaysDetails={todaysDetails}/>
+            <ImageCard imageDetails={imageDetails}/>
           </section>
         )}}
       />

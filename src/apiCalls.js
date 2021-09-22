@@ -8,7 +8,7 @@ const checkForError = (response) => {
     }
 }
 
-export const getTodaysImageDetails = () => {
-    return fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}`)
+export const getImageDetails = () => {
+    return fetch(`https://api.nasa.gov/planetary/apod?end_date=2021-09-21&start_date=2021-09-15&api_key=${apiKey}`)
             .then(checkForError)
 }
