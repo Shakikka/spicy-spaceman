@@ -12,9 +12,12 @@ const ImageCard = ({ imageDetails, favoriteImage, icons }) => {
                     {media_type==='video' &&
                     <iframe
                         title={title}
+                        src={url.replace('youtube', 'youtube-nocookie')}
                         width='750'
                         height='500'
-                        src={url}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        seamless
                     />}
                         <h6>{date}</h6>
                     <h3>{title}</h3>
