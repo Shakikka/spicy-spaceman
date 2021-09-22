@@ -14,13 +14,12 @@ const App = () => {
     getImageDetails()
     .then(details => {
       setImageDetails(details.reverse())
-      console.log(details)
     })
   }, [])
 
-  const favorite = () => {
+  // const favorite = () => {
 
-  }
+  // }
 
   return (
     <Switch>
