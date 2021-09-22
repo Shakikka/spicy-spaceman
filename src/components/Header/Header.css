@@ -5,7 +5,7 @@ header {
     align-items: center;
     flex-direction: row;
     background: rgba(220, 237, 247, .75);
-    min-width: 755px;
+    width: 755px;
     border-radius: 7px;
     font-family: 'Space Mono', monospace;
     font-style: italic;

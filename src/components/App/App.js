@@ -8,6 +8,7 @@ import './App.css';
 const App = () => {
 
   const [todaysDetails, setTodaysDetails] = useState({})
+  const [favorites, setFavorites] = useState([])
 
   useEffect(() => {
     getTodaysImageDetails()
@@ -16,6 +17,10 @@ const App = () => {
       console.log(details)
     })
   }, [])
+
+  const favorite = () => {
+    
+  }
 
   return (
     <Switch>
