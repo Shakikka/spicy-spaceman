@@ -28,6 +28,10 @@
     width: 150px;
 }
 
+.explanation {
+    width: 750px;
+}
+
 button {
     font-family: inherit;
     font-style: italic;

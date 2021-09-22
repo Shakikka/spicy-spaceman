@@ -13,7 +13,7 @@ const ImageCard = ({ todaysDetails }) => {
                 <h6>{date}</h6>
             </div>
             <h3>{title}</h3>
-            <h6>{explanation}</h6>
+            <h6 className='explanation'>{explanation}</h6>
             <div className='like-container'>
                 <button>Like?</button>
                 <img className='unliked' src={unliked} alt='unliked' />
