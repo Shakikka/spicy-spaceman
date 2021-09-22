@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    background: rgba(220, 237, 247, .75);
+    width: 50%;
+    border-radius: 7px;
+    font-family: 'Space Mono', monospace;
+    font-style: italic;
+}
+
+.logo {
+    height: 100px;
+    width: 150px;
+}
+
+h1 {
+    align-self: center;
+}

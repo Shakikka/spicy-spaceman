@@ -1,4 +1,5 @@
 import arth from '../../assets/Arth.gif';
+import './Header.css';
 
 const Header = ({}) => {
     return (

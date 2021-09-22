@@ -1,0 +1,11 @@
+html {
+    overflow-x: hidden;
+    background: url('/src/assets/federico-beccari-L8126OwlroY-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
