@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Header from '../Header/Header';
 import { getTodaysImageDetails } from '../../apiCalls';
+import Header from '../Header/Header';
+import ImageCard from '../ImageCard/ImageCard';
 import './App.css';
 
 const App = () => {
