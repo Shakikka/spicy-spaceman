@@ -23,6 +23,7 @@ const App = () => {
         return (
           <section className='main-container'>
             <Header />
+            <ImageCard todaysDetails={todaysDetails}/>
           </section>
         )}}
       />
