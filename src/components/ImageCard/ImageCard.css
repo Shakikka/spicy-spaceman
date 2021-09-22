@@ -1,5 +1,6 @@
 .image-card-box {
     margin-top: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -15,7 +16,7 @@
 }
 
 .todays-image {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border-radius: 7px;
     width: 750px;
     height: 500px;
@@ -23,4 +24,7 @@
 
 .img-deets {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 150px;
 }
