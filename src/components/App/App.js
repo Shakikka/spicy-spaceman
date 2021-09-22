@@ -8,7 +8,7 @@ import './App.css';
 const App = () => {
 
   const [imageDetails, setImageDetails] = useState([])
-  // const [favorites, setFavorites] = useState([])
+  const [favorites, setFavorites] = useState([])
 
   useEffect(() => {
     getImageDetails()
@@ -17,9 +17,17 @@ const App = () => {
     })
   }, [])
 
-  // const favorite = () => {
-
-  // }
+  const favoriteImage = e => {
+    const targetId = e.target.id
+    const searchFavorites = favorites.findIndex(favorite => favorite.date === targetId)
+    if (searchFavorites === -1) {
+      const foundImage = imageDetails.find(image => targetId === image.date)
+      setFavorites([...favorites, foundImage])
+    } else {
+      const filteredFavs = favorites.filter(favorite => favorite.date !== targetId)
+      setFavorites([...filteredFavs])
+    }
+  }
 
   return (
     <Switch>
@@ -27,7 +35,7 @@ const App = () => {
         return (
           <section className='main-container'>
             <Header />
-            <ImageCard imageDetails={imageDetails}/>
+            <ImageCard imageDetails={imageDetails} favoriteImage={favoriteImage}/>
           </section>
         )}}
       />

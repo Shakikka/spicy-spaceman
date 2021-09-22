@@ -3,7 +3,7 @@ import unliked from '../../assets/saturn-unlike.png';
 import liked from '../../assets/saturn-like.png';
 import './ImageCard.css';
 
-const ImageCard = ({ imageDetails }) => {
+const ImageCard = ({ imageDetails, favoriteImage }) => {
 
     const [like, setLike] = useState(false)
     
@@ -22,7 +22,7 @@ const ImageCard = ({ imageDetails }) => {
                         <h6>{date}</h6>
                     <h3>{title}</h3>
                     <h6>{explanation}</h6>
-                    {like ? 
+                    {/* {like ? 
                     <div className='like-container'>
                         <button onClick={() => setLike(false)}>Unlike</button>
                         <img className='unliked' src={liked} alt='unliked'/>
@@ -30,7 +30,11 @@ const ImageCard = ({ imageDetails }) => {
                     <div className='like-container'>
                         <button onClick={() => setLike(true)}>Like</button>
                         <img className='unliked' src={unliked} alt='liked' />
-                    </div>}
+                    </div>} */}
+                    <div className='like-container'>
+                        <button id={date} onClick={favoriteImage}>Like</button>
+                        <img className='unliked' src={unliked} alt='liked' />
+                    </div>
                 </section>
             )
         })
