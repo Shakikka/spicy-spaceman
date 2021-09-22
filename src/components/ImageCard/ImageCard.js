@@ -5,7 +5,18 @@ import './ImageCard.css';
 
 const ImageCard = ({ imageDetails, favoriteImage }) => {
 
-    const [like, setLike] = useState(false)
+    const [icons, setIcons] = useState([])
+    
+    const changeIcon = e => {
+        favoriteImage(e)
+        const targetId = e.target.id
+        if (!icons.includes(targetId)) {
+            setIcons([...icons, targetId])
+        } else {
+            const filteredIcons = icons.filter(icon => icon !== targetId)
+            setIcons([...filteredIcons])
+        } 
+    }
     
     return (
         imageDetails.map(({ media_type, date, explanation, title, url }) => {
@@ -22,18 +33,9 @@ const ImageCard = ({ imageDetails, favoriteImage }) => {
                         <h6>{date}</h6>
                     <h3>{title}</h3>
                     <h6>{explanation}</h6>
-                    {/* {like ? 
                     <div className='like-container'>
-                        <button onClick={() => setLike(false)}>Unlike</button>
-                        <img className='unliked' src={liked} alt='unliked'/>
-                    </div>:
-                    <div className='like-container'>
-                        <button onClick={() => setLike(true)}>Like</button>
-                        <img className='unliked' src={unliked} alt='liked' />
-                    </div>} */}
-                    <div className='like-container'>
-                        <button id={date} onClick={favoriteImage}>Like</button>
-                        <img className='unliked' src={unliked} alt='liked' />
+                        <button id={date} onClick={changeIcon}>Like</button>
+                        <img className='unliked' src={icons.includes(date) ? liked: unliked} alt='liked' />
                     </div>
                 </section>
             )
