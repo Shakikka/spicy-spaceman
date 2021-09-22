@@ -3,10 +3,11 @@ header {
     align-self: center;
     flex-direction: row;
     background: rgba(220, 237, 247, .75);
-    width: 50%;
+    min-width: 755px;
     border-radius: 7px;
     font-family: 'Space Mono', monospace;
     font-style: italic;
+    border: 5px solid #98daf2;
 }
 
 .logo {
