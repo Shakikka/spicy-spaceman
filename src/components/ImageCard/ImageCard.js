@@ -34,7 +34,7 @@ const ImageCard = ({ imageDetails, favoriteImage }) => {
                     <h3>{title}</h3>
                     <h6>{explanation}</h6>
                     <div className='like-container'>
-                        <button id={date} onClick={changeIcon}>Like</button>
+                        <button id={date} onClick={changeIcon}>{icons.includes(date) ? 'unlike' : 'like'}</button>
                         <img className='unliked' src={icons.includes(date) ? liked: unliked} alt='liked' />
                     </div>
                 </section>
